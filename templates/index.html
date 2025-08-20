@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Velazquez - Full Stack Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">EV</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Emmanuel Velazquez</span>
+                    </h1>
+                    <p class="hero-subtitle">Full Stack Developer & Computer Science Student</p>
+                    <p class="hero-description">
+                        Building scalable applications with Python, Node.js, and React. 
+                        Passionate about creating intuitive user experiences and robust backend systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Emmanuel Velazquez" class="profile-image">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Emmanuel Velazquez</h3>
+                            <p>Full Stack Developer</p>
+                            <div class="social-links">
+                                <a href="https://github.com/emanvela28" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/emmanuel-velazquez-39a415250" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:emanvelazquez28@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Full Stack Developer with 2+ years of experience building scalable APIs using Python and Node.js, 
+                        and crafting intuitive UIs with React. Currently pursuing my Bachelor's in Computer Science at UC Merced 
+                        with a 3.8 GPA.
+                    </p>
+                    <p>
+                        I'm passionate about collaborating across cross-functional teams, optimizing performance, and ensuring 
+                        code quality through rigorous testing. My expertise includes developing cloud-ready applications with a 
+                        strong emphasis on modular design and deployment best practices.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3.8</h3>
+                            <p>GPA</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Assembly</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">PowerShell</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Prisma</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Security & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux Hardening</span>
+                        <span class="skill-tag">Windows Server Security</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">API Security</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS/GCP</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Railway</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Problem Solving</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Big O Notation</span>
+                        <span class="skill-tag">Algorithm Design</span>
+                        <span class="skill-tag">System Architecture</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Team Lead & Full Stack Web Developer</h3>
+                            <span class="company">Morning Star Co</span>
+                        </div>
+                        <div class="experience-meta">
+                            <span class="duration">Jan 2025 - Present</span>
+                            <span class="location">Los Banos, CA</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Flask</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">Tiny YOLO</span>
+                            <span class="tech-pill">SQLite</span>
+                            <span class="tech-pill">SendGrid</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Designed and developed a full-stack application leveraging Tiny YOLO models for real-time tomato analysis</li>
+                            <li>Engineered Flask backend services for image processing and RESTful API operations</li>
+                            <li>Built responsive React frontend with SQLite database integration</li>
+                            <li>Integrated SendGrid API for automated stakeholder notifications</li>
+                            <li>Architected system with focus on modular design and cloud deployment readiness</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Low Voltage Internet Technician</h3>
+                            <span class="company">Secure Zone</span>
+                        </div>
+                        <div class="experience-meta">
+                            <span class="duration">Apr 2024 - Present</span>
+                            <span class="location">Los Angeles, CA</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="tech-stack">
+                            <span class="tech-pill">Network Security</span>
+                            <span class="tech-pill">Infrastructure</span>
+                            <span class="tech-pill">Troubleshooting</span>
+                            <span class="tech-pill">Risk Assessment</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Installed and configured network infrastructure</li>
+                            <li>Implemented network security protocols</li>
+                            <li>Conducted network troubleshooting and maintenance</li>
+                            <li>Performed network risk assessments</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Low Voltage Internet Technician</h3>
+                            <span class="company">High Visions Solutions</span>
+                        </div>
+                        <div class="experience-meta">
+                            <span class="duration">Jan 2017 - Apr 2024</span>
+                            <span class="location">Los Angeles, CA</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="tech-stack">
+                            <span class="tech-pill">Security Systems</span>
+                            <span class="tech-pill">Network Monitoring</span>
+                            <span class="tech-pill">Access Control</span>
+                            <span class="tech-pill">Security Audits</span>
+                        </div>
+                        <ul class="achievements">
+                            <li>Configured and monitored network devices</li>
+                            <li>Installed and secured security camera systems</li>
+                            <li>Conducted regular network security audits</li>
+                            <li>Managed secure access controls</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>RateMyTA</h3>
+                        <span class="project-date">Apr 2025</span>
+                    </div>
+                    <p class="project-description">
+                        A scalable web platform for reviewing teaching assistants, modeled after RateMyProfessors. 
+                        Features school-based authentication and comprehensive review system.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Prisma</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/emanvela28/RateMyTA" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://rate-my-ta.vercel.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Bobcat Board</h3>
+                        <span class="project-date">Dec 2024</span>
+                    </div>
+                    <p class="project-description">
+                        A Reddit-like platform specifically designed for UC Merced students. Features user authentication, 
+                        post creation, voting system, and community-driven content sharing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/emanvela28/108-Final" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Python Snake Game</h3>
+                        <span class="project-date">Nov 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Classic Snake game built in Python with a unique twist - featuring your teacher's face as the target! 
+                        Demonstrates game development skills and creative programming approaches.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pygame</span>
+                        <span class="tech-tag">Game Development</span>
+                        <span class="tech-tag">Image Processing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/emanvela28/learn-arcade-work/tree/master/Lab%2012%20-%20Final%20Lab" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Computer Science</h3>
+                        <p class="institution">University of California, Merced</p>
+                        <p class="duration">Aug 2021 - 2025</p>
+                        <p class="gpa">GPA: 3.8</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Google Cybersecurity Professional Certificate</h3>
+                        <p class="institution">Google</p>
+                        <p class="status">Security+ & Network+ (In Progress)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>emanvelazquez28@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1-661-317-8456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Los Angeles, CA 93536</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/emanvela28" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/emmanuel-velazquez-39a415250" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Emmanuel Velazquez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
